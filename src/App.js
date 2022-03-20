@@ -2,6 +2,8 @@ import './App.css';
 import {Header} from './components/Header';
 import {Balance} from './components/Balance';
 import {Expenses} from './components/Expenses';
+import {SpendedList} from './components/SpendedList';
+import {AddSpend} from './components/AddSpend';
 
 function App() {
   return (
@@ -9,9 +11,9 @@ function App() {
       <Header />
       <div className='container'>
         <Balance />
-      </div>
-      <div className='inc-exp-container'>
         <Expenses />
+        <SpendedList />
+        <AddSpend />
       </div>
     </div>
 
