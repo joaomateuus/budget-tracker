@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Expenses = () => {
+export const ExpensesCard = () => {
   return (
     <div className='inc-exp-container'>   
         <div>

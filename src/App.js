@@ -1,21 +1,23 @@
 import './App.css';
 import {Header} from './components/Header';
 import {Balance} from './components/Balance';
-import {Expenses} from './components/Expenses';
+import {ExpensesCard} from './components/ExpensesCard';
 import {SpendedList} from './components/SpendedList';
 import {AddSpend} from './components/AddSpend';
 
+import {GlobalProvider} from './context/GlobalState'
+
 function App() {
   return (
-    <div>
+    <GlobalProvider>
       <Header />
       <div className='container'>
         <Balance />
-        <Expenses />
+        <ExpensesCard />
         <SpendedList />
         <AddSpend />
       </div>
-    </div>
+    </GlobalProvider>
 
 
   );
